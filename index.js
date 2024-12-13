@@ -99,9 +99,12 @@
 // Ajuste la fonction qui prend en paramètre une string et qui doit retourner la string sans les voyelles.
 // Exemple : "Hello" => "Hll"
 
-export const removeVowels = () => {}
+// export const removeVowels = (mot) => {
+//     const nouveauMot = mot.replace(/[aeiouy]/g,"");
+//     return nouveauMot
+// }
 
-console.info("Exercice 8 : ", removeVowels("Hello"));
+// console.info("Exercice 8 : ", removeVowels("Hello"));
 
 //----------------------------------------------------------------------------------------------//
 // EXERCICE 9
@@ -109,9 +112,12 @@ console.info("Exercice 8 : ", removeVowels("Hello"));
 // Ajuste la fonction qui prend en paramètre un tableau et qui doit retourner le tableau trié par ordre croissant.
 // Exemple : [1, 3, 2] => [1, 2, 3]
 
-// export const sortArray = () => {}
+export const sortArray = (Tablo) => {
+    const newTableau = Tablo.sort((a, b) => a - b);
+    return newTableau
+}
 
-// console.info("Exercice 9 : ", sortArray([1, 3, 2]));
+console.info("Exercice 9 : ", sortArray([1, 3, 2]));
 
 //----------------------------------------------------------------------------------------------//
 // EXERCICE 10
