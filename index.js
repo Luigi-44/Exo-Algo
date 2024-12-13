@@ -112,12 +112,12 @@
 // Ajuste la fonction qui prend en paramètre un tableau et qui doit retourner le tableau trié par ordre croissant.
 // Exemple : [1, 3, 2] => [1, 2, 3]
 
-export const sortArray = (Tablo) => {
-    const newTableau = Tablo.sort((a, b) => a - b);
-    return newTableau
-}
+// export const sortArray = (Tablo) => {
+//     const newTableau = Tablo.sort((a, b) => a - b);
+//     return newTableau
+// }
 
-console.info("Exercice 9 : ", sortArray([1, 3, 2]));
+// console.info("Exercice 9 : ", sortArray([1, 3, 2]));
 
 //----------------------------------------------------------------------------------------------//
 // EXERCICE 10
@@ -125,11 +125,16 @@ console.info("Exercice 9 : ", sortArray([1, 3, 2]));
 // Ajuste la fonction qui prend en paramètre une string et qui renvoie un tableau avec toutes les rotations possibles de cette string.
 // Exemple : "Hello" => ["elloH", "lloHe", "loHel", "oHell", "Hello"]
 
-// export const getStringRotations = () => {
+export const getStringRotations = (motInversé) => {
+const tablo =[]
+for(let i=0 ; i< motInversé.length ; i++) {
+    tablo.push(motInversé.slice(i)+ motInversé.slice(0,i));
+}
 
-// };
+return tablo
+};
 
-// console.info("Exercice 10 : ", getStringRotations("Hello"));
+console.info("Exercice 10 : ", getStringRotations("Hello"));
 
 //----------------------------------------------------------------------------------------------//
 // EXERCICE 11
