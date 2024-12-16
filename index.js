@@ -155,11 +155,11 @@
 // Ajuste la fonction qui prend en paramètre un tableau de string et qui doit retourner un tableau avec la longueur de chaque string.
 // Exemple : ["Hello", "World"] => [5, 5]
 
-export const getLengths = (tabloDeString) => {
-    return tabloDeString.map(string => string.length)
-}
+// export const getLengths = (tabloDeString) => {
+//     return tabloDeString.map(string => string.length)
+// }
 
-console.info("Exercice 12 : ", getLengths(["Hello", "World"]));
+// console.info("Exercice 12 : ", getLengths(["Hello", "World"]));
 
 //----------------------------------------------------------------------------------------------//
 // EXERCICE 13
@@ -167,9 +167,11 @@ console.info("Exercice 12 : ", getLengths(["Hello", "World"]));
 // Ajuste la fonction qui prend en paramètre un tableau de string et qui doit retourner un tableau avec toutes les premières lettres de chaque string.
 // Exemple : ["Hello", "World"] => ["H", "W"]
 
-// export const getFirstLetters = () => {}
+export const getFirstLetters = (tablo) => {
+    return tablo.map(string => string.charAt(0));
+};
 
-// console.info("Exercice 13 : ", getFirstLetters(["Hello", "World"]));
+console.info("Exercice 13 : ", getFirstLetters(["Hello", "World"]));
 
 //----------------------------------------------------------------------------------------------//
 // EXERCICE 14
