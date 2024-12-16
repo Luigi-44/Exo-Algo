@@ -167,11 +167,11 @@
 // Ajuste la fonction qui prend en paramètre un tableau de string et qui doit retourner un tableau avec toutes les premières lettres de chaque string.
 // Exemple : ["Hello", "World"] => ["H", "W"]
 
-export const getFirstLetters = (tablo) => {
-    return tablo.map(string => string.charAt(0));
-};
+// export const getFirstLetters = (tablo) => {
+//     return tablo.map(string => string.charAt(0));
+// };
 
-console.info("Exercice 13 : ", getFirstLetters(["Hello", "World"]));
+// console.info("Exercice 13 : ", getFirstLetters(["Hello", "World"]));
 
 //----------------------------------------------------------------------------------------------//
 // EXERCICE 14
@@ -179,9 +179,11 @@ console.info("Exercice 13 : ", getFirstLetters(["Hello", "World"]));
 // Ajuste la fonction qui prend en paramètre un tableau de string et qui doit retourner un tableau avec toutes les dernières lettres de chaque string.
 // Exemple : ["Hello", "World"] => ["o", "d"]
 
-// export const getLastLetters = () => {}
+export const getLastLetters = (tablo) => {
+    return tablo.map(string => string.charAt(string.length - 1))
+}
 
-// console.info("Exercice 14 : ", getLastLetters(["Hello", "World"]));
+console.info("Exercice 14 : ", getLastLetters(["Hello", "World"]));
 
 //----------------------------------------------------------------------------------------------//
 // EXERCICE 15
