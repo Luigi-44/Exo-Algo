@@ -142,12 +142,12 @@
 // Ajuste la fonction qui prend en paramètre un tableau et qui doit ajouter le nombre 1 à chaque élément du tableau.
 // Exemple : [1, 2, 3] => [2, 3, 4]
 
-export const incrementArray = (tablo) => {
-    return tablo.map(element => element+1);
-}
+// export const incrementArray = (tablo) => {
+//     return tablo.map(element => element+1);
+// }
 
 
-console.info("Exercice 11 : ", incrementArray([1, 2, 3]));
+// console.info("Exercice 11 : ", incrementArray([1, 2, 3]));
 
 //----------------------------------------------------------------------------------------------//
 // EXERCICE 12
@@ -155,9 +155,11 @@ console.info("Exercice 11 : ", incrementArray([1, 2, 3]));
 // Ajuste la fonction qui prend en paramètre un tableau de string et qui doit retourner un tableau avec la longueur de chaque string.
 // Exemple : ["Hello", "World"] => [5, 5]
 
-// export const getLengths = () => {}
+export const getLengths = (tabloDeString) => {
+    return tabloDeString.map(string => string.length)
+}
 
-// console.info("Exercice 12 : ", getLengths(["Hello", "World"]));
+console.info("Exercice 12 : ", getLengths(["Hello", "World"]));
 
 //----------------------------------------------------------------------------------------------//
 // EXERCICE 13
