@@ -125,16 +125,16 @@
 // Ajuste la fonction qui prend en paramètre une string et qui renvoie un tableau avec toutes les rotations possibles de cette string.
 // Exemple : "Hello" => ["elloH", "lloHe", "loHel", "oHell", "Hello"]
 
-export const getStringRotations = (motInversé) => {
-const tablo =[]
-for(let i=0 ; i< motInversé.length ; i++) {
-    tablo.push(motInversé.slice(i)+ motInversé.slice(0,i));
-}
+// export const getStringRotations = (motInversé) => {
+// const tablo =[]
+// for(let i=0 ; i< motInversé.length ; i++) {
+//     tablo.push(motInversé.slice(i)+ motInversé.slice(0,i));
+// }
 
-return tablo
-};
+// return tablo
+// };
 
-console.info("Exercice 10 : ", getStringRotations("Hello"));
+// console.info("Exercice 10 : ", getStringRotations("Hello"));
 
 //----------------------------------------------------------------------------------------------//
 // EXERCICE 11
@@ -142,9 +142,12 @@ console.info("Exercice 10 : ", getStringRotations("Hello"));
 // Ajuste la fonction qui prend en paramètre un tableau et qui doit ajouter le nombre 1 à chaque élément du tableau.
 // Exemple : [1, 2, 3] => [2, 3, 4]
 
-// export const incrementArray = () => {}
+export const incrementArray = (tablo) => {
+    return tablo.map(element => element+1);
+}
 
-// console.info("Exercice 11 : ", incrementArray([1, 2, 3]));
+
+console.info("Exercice 11 : ", incrementArray([1, 2, 3]));
 
 //----------------------------------------------------------------------------------------------//
 // EXERCICE 12
